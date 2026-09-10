@@ -25,7 +25,7 @@ services:
     ports:
       - "3002:3000"
     environment:
-      - MESSAGE="Hola, soy Lobaton Mendoza Luis Angel Manuel"
+      - MESSAGE="Hola, soy Lobaton Mendoza Luis Angel Manuel - Replica 1"
     depends_on:
       - db
 
@@ -34,7 +34,7 @@ services:
     ports:
       - "3003:3000"
     environment:
-      - MESSAGE="Hola, soy Lobaton Mendoza Luis Angel Manuel"
+      - MESSAGE="Hola, soy Lobaton Mendoza Luis Angel Manuel - Replica 2"
     depends_on:
       - db
 
