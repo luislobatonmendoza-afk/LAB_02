@@ -26,5 +26,12 @@ Docker Compose crea automáticamente una red bridge predeterminada para cada pro
 **Macvlan:** Permite asignar una dirección MAC a un contenedor para que aparezca como un dispositivo físico más en la red local.
 **None:** Desactiva completamente la red para el contenedor (aislamiento total).
 
+## Comandos para Despliegue
+
+Para levantar todo el entorno de contenedores en segundo plano:
+```bash
+docker compose up -d
+```
+
 ### Créditos
  Lobaton Mendoza Luis Angel Manuel
