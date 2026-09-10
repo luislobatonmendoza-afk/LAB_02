@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: luis_admin
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: luis_db
+    ports:
+      - "5432:5432"
+
+  api1:
+    build: ./api
+    ports:
+      - "3001:3000"
+    environment:
+      - MESSAGE="Hola, soy Lobaton Mendoza Luis Angel Manuel"
+    depends_on:
+      - db
+
+  api2:
+    build: ./api
+    ports:
+      - "3002:3000"
+    environment:
+      - MESSAGE="Hola, soy Lobaton Mendoza Luis Angel Manuel"
+    depends_on:
+      - db
+
+  api3:
+    build: ./api
+    ports:
+      - "3003:3000"
+    environment:
+      - MESSAGE="Hola, soy Lobaton Mendoza Luis Angel Manuel"
+    depends_on:
+      - db
