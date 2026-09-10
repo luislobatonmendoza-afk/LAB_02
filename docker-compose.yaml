@@ -9,6 +9,8 @@ services:
       POSTGRES_DB: luis_db
     ports:
       - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
   api1:
     build: ./api
@@ -36,3 +38,6 @@ services:
       - MESSAGE="Hola, soy Lobaton Mendoza Luis Angel Manuel"
     depends_on:
       - db
+
+volumes:
+  pgdata:
