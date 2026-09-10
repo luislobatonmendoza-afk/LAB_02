@@ -33,5 +33,15 @@ Para levantar todo el entorno de contenedores en segundo plano:
 docker compose up -d
 ```
 
+## Capturas de Funcionamiento
+
+**Contenedores activos en Docker:**
+![Terminal](img/Captura%20de%20pantalla%202026-09-10%20a%20la(s)%2014.14.22.png)
+
+**APIs funcionando en el navegador:**
+![Navegador 3001](img/Captura%20de%20pantalla%202026-09-10%20a%20la(s)%2014.14.37.png)
+![Navegador 3002](img/Captura%20de%20pantalla%202026-09-10%20a%20la(s)%2014.14.47.png)
+![Navegador 3003](img/Captura%20de%20pantalla%202026-09-10%20a%20la(s)%2014.14.57.png)
+
 ### Créditos
  Lobaton Mendoza Luis Angel Manuel
