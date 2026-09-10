@@ -4,7 +4,7 @@ services:
     image: postgres:13-alpine
     environment:
       POSTGRES_USER: luis_admin
-      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_PASSWORD: lab02
       POSTGRES_DB: luis_db
     ports:
       - "5432:5432"
